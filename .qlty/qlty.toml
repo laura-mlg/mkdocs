@@ -58,12 +58,3 @@ mode = "comment"
 name = "actionlint"
 mode = "comment"
 
-[[plugin]]
-name = "vale"
-mode = "monitor"
-config_files = [".vale.ini"]
-
-# Exclude vale from non-docs directories
-[[exclude]]
-plugins = ["vale"]
-file_patterns = ["mkdocs/**", "tests/**"]
